@@ -2,9 +2,9 @@
 #!/bin/bash
 
 # Set values for your storage account
-subscription_id="d140cb52-21fe-4b1b-a7ab-1a6586adbdf4"
-azure_storage_account="jonathanaistorage"
-azure_storage_key="Ipm3EINcZZUWBNIeDgdYWAn3DMoZBA/aF/LAROXPALz/u0pWEctg+uE9M5/g3JFunAEHjPMUMAfa+AStcGN/PQ=="
+subscription_id="YOUR_SUBCRIPTION_ID"
+azure_storage_account="YOUR_STORGE_ACCOUNT"
+azure_storage_key="YOUR STORAGE_KEY"
 
 echo "Creating container..."
 az storage container create --account-name "$azure_storage_account" --subscription "$subscription_id" --name margies --public-access blob --auth-mode key --account-key "$azure_storage_key" --output none
